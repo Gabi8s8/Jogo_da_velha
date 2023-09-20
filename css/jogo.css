@@ -1,0 +1,136 @@
+body{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 42px;
+}
+
+/*BOTÕES*/
+#buttons-container{
+    margin-bottom: 20px;
+}
+
+#buttons-container button{
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    background: #ecd5dd;
+    font-weight: bold;
+}
+
+/*JOGO*/
+#container {
+    width: 300px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*centralizar uma div na tela*/
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.box {
+    border: 5px solid black;
+    height: 100px;
+    box-sizing: border-box;
+    flex: 1 1 33%; /*garantir as 3 divs por linha*/
+}
+
+#block-1 {
+    border-top: none;
+    border-left: none;
+}
+#block-2 {
+    border-top: none;
+}
+#block-3 {
+    border-top: none;
+    border-right: none;
+}
+#block-4 {
+    border-left: none;
+}
+#block-6 {
+    border-right: none;
+}
+#block-7 {
+    border-bottom: none;
+    border-left: none;
+}
+#block-8 {
+    border-bottom: none;
+}
+#block-9 {
+    border-bottom: none;
+    border-right: none;
+}
+
+/* SIMBOLOS */
+.x{
+    font-size: 65px;
+    color: red;
+    display: inline-block;
+}
+
+.o {
+    width: 50px;
+    height: 50px;
+    border: 5px solid green;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+/* PLACAR */
+#scoreboard-container {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 24px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#x-scoreboard {
+    color: red;
+    margin-right: 3px;
+}
+
+#o-scoreboard {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 3px solid green;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-bottom: -2px;
+}
+
+.score-box {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+/* MENSAGEM */
+#message p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 217px;
+    left: 0;
+    right: 0;
+    width: 500px;
+    background-color: rgb(41, 41, 41);
+    font-size: 45px;
+    color: #f0dfe5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hide {
+    display: none !important;
+}
